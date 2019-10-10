@@ -31,7 +31,6 @@ header {
     @media @mobile {
       .mobile-column();
       align-content: center;
-        border: 2px solid red;
 
     } // this ends @media for .content-section
     
@@ -41,8 +40,6 @@ header {
 
       @media @mobile {
         width: 95%;
-        
-        border: 2px solid red;
       }
       
 
@@ -54,12 +51,17 @@ header {
 
       @media @mobile {
         width: 95%;
-        border: 2px solid red;
       }
 
 
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 95%;
+          
+        } // this ends @media for img
+
       }
     }
   }
@@ -93,6 +95,7 @@ header {
 
     img {
       border-radius: 10px;
+
     }
   }
 
@@ -117,6 +120,11 @@ header {
 
       .btn {
         .button();
+
+        @media @mobile {
+          width: 93%;
+        } // this ends @media for .btn
+
       } // this ends .btn
 
     }

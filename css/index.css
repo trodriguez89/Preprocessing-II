@@ -178,6 +178,8 @@ nav {
   display: flex;
   padding: 1% 0;
   margin: 0 auto;
+  justify-content: center;
+  border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
   nav {
@@ -186,24 +188,26 @@ nav {
   }
 }
 nav .fun-bus {
-  width: 50%;
+  width: 400px;
 }
 @media (max-width: 500px) {
   nav .fun-bus {
     width: 100%;
     text-align: center;
+    padding: 2% 0;
   }
 }
 nav .links {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
+  width: 400px;
   font-size: 1.6rem;
 }
 @media (max-width: 500px) {
   nav .links {
     width: 100%;
+    padding: 2% 0;
   }
 }
 .footer {
@@ -232,7 +236,6 @@ header .header-container {
     display: flex;
     flex-direction: column;
     align-content: center;
-    border: 2px solid red;
   }
 }
 .home .content-section .text-content {
@@ -242,7 +245,6 @@ header .header-container {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 95%;
-    border: 2px solid red;
   }
 }
 .home .content-section .img-content {
@@ -252,11 +254,15 @@ header .header-container {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 95%;
-    border: 2px solid red;
   }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 95%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -316,4 +322,9 @@ header .header-container {
   font-size: 1.6rem;
   padding: 4% 0;
   color: white;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 93%;
+  }
 }
