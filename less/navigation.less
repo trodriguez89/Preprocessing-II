@@ -3,11 +3,24 @@
 nav {
     display: flex;
     padding: 1% 0;
-    width: 800px;
+    // width: 800px;
     margin: 0 auto;
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+
+    } // this ends media query for nav
 
     .fun-bus {
         width: 50%;
+
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+            
+        } // this ends @media query for .fun-bus
+
     } // this ends .fun-bus
 
 
@@ -17,6 +30,12 @@ nav {
         align-items: center;
         width: 50%;
         font-size: 1.6rem;
+
+        @media @mobile {
+            width: 100%;
+
+        } // this ends media query for .links
+
     } // this ends .links
 
 } // this ends nav
