@@ -1,1 +1,47 @@
 // Navigation Styles here
+
+nav {
+    display: flex;
+    padding: 1% 0;
+    margin: 0 auto;
+    justify-content: center;
+    border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+
+    } // this ends media query for nav
+
+    .fun-bus {
+        width: 400px;
+
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+            padding: 2% 0;
+            
+        } // this ends @media query for .fun-bus
+
+    } // this ends .fun-bus
+
+
+    .links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 400px;
+        font-size: 1.6rem;
+
+        @media @mobile {
+            width: 100%;
+            padding: 2% 0;
+
+        } // this ends media query for .links
+
+    } // this ends .links
+
+} // this ends nav
+
+
+
